@@ -1,0 +1,11 @@
+syntax = "proto3";
+service Service {
+    rpc DoRequest(Request) returns (Response) {}
+}
+message Request {
+    bytes body = 1;
+}
+message Response {
+    bytes body = 1;
+}
+
