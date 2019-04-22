@@ -5,11 +5,8 @@ import (
     "fmt"
     proto "github.com/DGHeroin/yig/proto"
     "github.com/micro/go-micro"
-    _ "github.com/micro/go-plugins/registry/etcd"
+    _ "github.com/micro/go-plugins/registry/etcdv3"
 )
-
-
-
 
 var (
     errorNotImpl = fmt.Errorf("function OnRequest() not found")
